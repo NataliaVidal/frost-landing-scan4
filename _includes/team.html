@@ -1,0 +1,147 @@
+<section id="team">
+    <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Team</h2>
+        <hr class="primary">
+    </div>
+    <div class="container">
+        <h3 style="text-align: center;">Scientific Comittee</h3>
+        <!-- Inria Chile -->
+        <div style="display: flex;flex-wrap: wrap;justify-content: center;">
+        {% for member in site.data.team %}
+            {% if member.location == 1 %}
+            <div style="text-align: center;background-color: white;width: 40%; max-width: 320px; height: 60%; max-height: 430px; padding: 24px 8px;color:black;display: inline-block;
+            margin: 24px 16px;">
+                <img src="{{ member.image }}" style="border-radius: 50%;display: block; margin: 0 auto; width: 100%; max-width: 200px; height: 100%; max-height: 200px;" alt="">
+                <a href="{{ member.link }}">
+                    {{ member.name }}
+                </a>
+                <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">{{ member.position }}</p>
+                <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">{{ member.organization }}</p>
+                <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">{{ member.expertise }}</p>
+                <div class="icons">
+                    <div class="icons">
+                        <a href="{{ member.link }}" class="icon fa-globe" target="_blank"><span class="label">Link</span></a>
+                        <!-- <a href="{{ member.researchgate }}" class="icon fa-researchgate" target="_blank"><span class="label">Researchgate</span></a> -->
+                        <a href="{{ member.twitter }}" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a>
+                        <a href="{{ member.linkedin }}" class="icon fa-linkedin" target="_blank"><span class="label">Linkedin</span></a>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+        </div>
+        <!-- Inria Francia -->
+        <div style="display: flex;flex-wrap: wrap;justify-content: center;">
+        {% for member in site.data.team %}
+            {% if member.location == 2 %}
+            <div style="text-align: center;background-color: white; width: 40%; max-width: 320px; height: 60%; max-height: 430px; padding: 24px 8px;color:black;display: inline-block;
+            margin: 24px 16px;">
+                <img src="{{ member.image }}" style="border-radius: 50%;display: block; margin: 0 auto; width: 100%; max-width: 200px; height: 100%; max-height: 200px;" alt="">
+                <a href="{{ member.link }}">
+                    {{ member.name }}
+                </a>
+                <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">{{ member.position }}</p>
+                <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">{{ member.organization }}</p>
+                <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">{{ member.expertise }}</p>
+                <div class="icons">
+                    <div class="icons">
+                        <a href="{{ member.link }}" class="icon fa-globe" target="_blank"><span class="label">Link</span></a>
+                        <!-- <a href="{{ member.researchgate }}" class="icon fa-researchgate" target="_blank"><span class="label">Researchgate</span></a> -->
+                        {% if.member.twitter != # %}
+                            <a href="{{ member.twitter }}" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a>
+                        {% endif %}
+                        {% if.member.linkedin != # %}
+                            <a href="{{ member.linkedin }}" class="icon fa-linkedin" target="_blank"><span class="label">Linkedin</span></a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+        </div>
+
+        <!-- Others -->
+        <div style="display: flex;flex-wrap: wrap;justify-content: center;">
+        {% for member in site.data.team %}
+            {% if member.location == 3 %}
+            <div style="text-align: center;background-color: white; width: 40%; max-width: 320px; height: 60%; max-height: 430px; padding: 24px 8px;color:black;display: inline-block;
+            margin: 24px 16px;">
+                <img src="{{ member.image }}" style="border-radius: 50%;display: block; margin: 0 auto; width: 100%; max-width: 200px; height: 100%; max-height: 200px;" alt="">
+                <a href="{{ member.link }}">
+                    {{ member.name }}
+                </a>
+                <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">{{ member.position }}</p>
+                <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">{{ member.organization }}</p>
+                <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">{{ member.expertise }}</p>
+                <div class="icons">
+                    <div class="icons">
+                        <a href="{{ member.link }}" class="icon fa-globe" target="_blank"><span class="label">Link</span></a>
+                        <!-- <a href="{{ member.researchgate }}" class="icon fa-researchgate" target="_blank"><span class="label">Researchgate</span></a> -->
+                        {% if.member.twitter != # %}
+                            <a href="{{ member.twitter }}" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a>
+                        {% endif %}
+                        {% if.member.linkedin != # %}
+                            <a href="{{ member.linkedin }}" class="icon fa-linkedin" target="_blank"><span class="label">Linkedin</span></a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+        </div>
+        ​
+        <h3 style="text-align: center;">Researchers</h3>
+        <div style="display: flex;flex-wrap: wrap;justify-content: center;">
+        {% for member in site.data.team %}
+            {% if member.location == 4 %}
+            <div style="text-align: center;background-color: white; width: 40%; max-width: 320px; height: 60%; max-height: 430px; padding: 24px 8px;color:black;display: inline-block;
+            margin: 24px 16px;">
+                <img src="{{ member.image }}" style="border-radius: 50%;display: block; margin: 0 auto; width: 100%; max-width: 200px; height: 100%; max-height: 200px;" alt="">
+                <a href="{{ member.link }}">
+                    {{ member.name }}
+                </a>
+                <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">{{ member.position }}</p>
+                <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">{{ member.organization }}</p>
+                <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">{{ member.expertise }}</p>
+                <div class="icons">
+                    {% if.member.link != # %}
+                        <a href="{{ member.link }}" class="icon fa-globe" target="_blank"><span class="label">Link</span></a>
+                    {% endif %}
+                    <!-- <a href="{{ member.researchgate }}" class="icon fa-researchgate" target="_blank"><span class="label">Researchgate</span></a> -->
+                    {% if.member.twitter != # %}
+                            <a href="{{ member.twitter }}" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a>
+                    {% endif %}
+                    {% if.member.linkedin != # %}
+                        <a href="{{ member.linkedin }}" class="icon fa-linkedin" target="_blank"><span class="label">Linkedin</span></a>
+                    {% endif %}
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+        </div>
+
+
+        <h3 style="text-align: center;">Engineering team</h3>
+        <div style="display: flex;flex-wrap: wrap;justify-content: center;">
+        {% for member in site.data.team %}
+            {% if member.location == 5 %}
+            <div style="text-align: center;background-color: white; width: 40%; max-width: 320px; height: 60%; max-height: 430px; padding: 24px 8px;color:black;display: inline-block;
+            margin: 24px 16px;">
+                <img src="{{ member.image }}" style="border-radius: 50%;display: block; margin: 0 auto; width: 100%; max-width: 200px; height: 100%; max-height: 200px;" alt="">
+                <a href="{{ member.link }}">
+                    {{ member.name }}
+                </a>
+                <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">{{ member.position }}</p>
+                <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">{{ member.organization }}</p>
+                <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">{{ member.expertise }}</p>
+                <!-- <div class="icons">
+                    <a href="{{ member.link }}" class="icon fa-globe" target="_blank"><span class="label">Link</span></a>
+                    <a href="{{ member.link }}" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a>
+                    <a href="{{ member.link }}" class="icon fa-linkedin" target="_blank"><span class="label">Linkedin</span></a>
+                </div> -->
+            </div>
+            {% endif %}
+        {% endfor %}
+        </div>
+    </div>
+</section>

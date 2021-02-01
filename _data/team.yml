@@ -1,0 +1,21 @@
+- name: Nayat Sánchez-Pi
+  link: https://inria.cl/en/nayat-sanchez-pi
+  twitter: https://twitter.com/nayatsanchezpi
+  linkedin: https://www.linkedin.com/in/nayat-sanchez-pi-02812110/
+  researchgate: https://www.researchgate.net/profile/Nayat_Sanchez-Pi
+  position: Lead
+  location: 1
+  expertise: Artificial Intelligence
+  organization: Inria Chile Research Center
+  #image: "../assets/images/team/Nayat Sanchez-Pi.jpeg"
+
+- name: Luis Martí
+  link: http://lmarti.com
+  twitter: https://twitter.com/iamluismarti
+  linkedin: https://www.linkedin.com/in/luismarti/
+  researchgate: https://www.researchgate.net/profile/Luis_Marti
+  position: Co-lead
+  location: 1
+  expertise: Machine learning & Evolutionary Computing
+  organization: Inria Chile Research Center
+  #image: "../assets/images/team/Luis Martí.jpeg"
