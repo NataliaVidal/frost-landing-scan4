@@ -7,7 +7,7 @@
   location: 1
   expertise: Artificial Intelligence
   organization: Inria Chile Research Center
-  #image: "../assets/images/team/Nayat Sanchez-Pi.jpeg"
+  image: "../img/teams/Nayat Sanchez-Pi.jpeg"
 
 - name: Luis Martí
   link: http://lmarti.com
@@ -18,4 +18,4 @@
   location: 1
   expertise: Machine learning & Evolutionary Computing
   organization: Inria Chile Research Center
-  #image: "../assets/images/team/Luis Martí.jpeg"
+  image: "../img/teams/Luis Martí.jpeg"
