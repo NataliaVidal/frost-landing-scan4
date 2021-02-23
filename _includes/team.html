@@ -5,7 +5,7 @@
     </div>
     <div class="container">
         <h3 style="text-align: center;">Scientific Comittee</h3>
-        <!-- Inria Chile -->
+
         <div style="display: flex;flex-wrap: wrap;justify-content: center;">
         {% for member in site.data.team %}
             {% if member.location == 1 %}
@@ -21,7 +21,6 @@
                 <div class="icons">
                     <div class="icons">
                         <a href="{{ member.link }}" class="fa fa-globe" target="_blank"></a>
-                        <!-- <a href="{{ member.researchgate }}" class="icon fa-researchgate" target="_blank"><span class="label">Researchgate</span></a> -->
                         <a href="{{ member.twitter }}" class="fab fa-twitter" target="_blank"></a>
                         <a href="{{ member.linkedin }}" class="fab fa-linkedin" target="_blank"></a>
                     </div>
@@ -30,7 +29,7 @@
             {% endif %}
         {% endfor %}
         </div>
-        <!-- Inria Francia -->
+
         <div style="display: flex;flex-wrap: wrap;justify-content: center;">
         {% for member in site.data.team %}
             {% if member.location == 2 %}
@@ -46,7 +45,6 @@
                 <div class="icons">
                     <div class="icons">
                         <a href="{{ member.link }}" class="fa fa-globe" target="_blank"></a>
-                        <!-- <a href="{{ member.researchgate }}" class="icon fa-researchgate" target="_blank"><span class="label">Researchgate</span></a> -->
                         {% if.member.twitter != # %}
                             <a href="{{ member.twitter }}" class="fab fa-twitter" target="_blank"></a>
                         {% endif %}
@@ -60,7 +58,7 @@
         {% endfor %}
         </div>
 
-        <!-- Others -->
+
         <div style="display: flex;flex-wrap: wrap;justify-content: center;">
         {% for member in site.data.team %}
             {% if member.location == 3 %}
@@ -76,7 +74,6 @@
                 <div class="icons">
                     <div class="icons">
                         <a href="{{ member.link }}" class="fa fa-globe" target="_blank"></a>
-                        <!-- <a href="{{ member.researchgate }}" class="icon fa-researchgate" target="_blank"><span class="label">Researchgate</span></a> -->
                         {% if.member.twitter != # %}
                             <a href="{{ member.twitter }}" class="fab fa-twitter" target="_blank"></a>
                         {% endif %}
@@ -107,7 +104,6 @@
                     {% if.member.link != # %}
                         <a href="{{ member.link }}" class="fa fa-globe" target="_blank"></a>
                     {% endif %}
-                    <!-- <a href="{{ member.researchgate }}" class="icon fa-researchgate" target="_blank"><span class="label">Researchgate</span></a> -->
                     {% if.member.twitter != # %}
                             <a href="{{ member.twitter }}" class="fab fa-twitter" target="_blank"></a>
                     {% endif %}
@@ -134,11 +130,6 @@
                 <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">{{ member.position }}</p>
                 <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">{{ member.organization }}</p>
                 <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">{{ member.expertise }}</p>
-                <!-- <div class="icons">
-                    <a href="{{ member.link }}" class="icon fa-globe" target="_blank"><span class="label">Link</span></a>
-                    <a href="{{ member.link }}" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a>
-                    <a href="{{ member.link }}" class="icon fa-linkedin" target="_blank"><span class="label">Linkedin</span></a>
-                </div> -->
             </div>
             {% endif %}
         {% endfor %}
