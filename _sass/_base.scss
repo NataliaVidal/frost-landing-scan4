@@ -93,7 +93,7 @@ aside {
         > li {
             > a,
             > a:focus {
-                text-transform: uppercase;
+                //text-transform: uppercase;
                 font-weight: 700;
                 font-size: 13px;
                 color: $theme-dark;
@@ -114,7 +114,7 @@ aside {
         }
     }
     @media (min-width: 768px) {
-        background-color: transparent;
+        background-color: #e5eff8e6; //background-color: transparent;
         border-color: rgba(white, .3);
         .navbar-header .navbar-brand {
             color: rgba(white, .7);
@@ -125,7 +125,7 @@ aside {
         }
         .nav > li > a,
         .nav > li > a:focus {
-            color: rgba(white, .7);
+            color: #2b3d4a;
             &:hover {
                 color: white;
             }
