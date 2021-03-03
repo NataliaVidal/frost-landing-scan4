@@ -10,13 +10,12 @@ body {
 
 hr {
     border-color: $theme-primary;
-    border-width: 3px;
+    border-width: 5px;
     max-width: 50px;
 }
 
 hr.light {
     border-color: white;
-    border-width: 5px;
 }
 
 a {
@@ -51,6 +50,10 @@ p {
 .bg-dark {
     background-color: $theme-dark;
     color: white;
+}
+
+.bg-light {
+    background-color: #deeaf8;
 }
 
 .text-faded {
