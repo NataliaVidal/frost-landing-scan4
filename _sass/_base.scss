@@ -105,7 +105,8 @@ aside {
             &.active {
                 > a,
                 > a:focus {
-                    color: $theme-primary !important;
+                    text-decoration: underline;
+                    color: #2b3d4a;
                     background-color: transparent;
                     &:hover {
                         background-color: transparent;
