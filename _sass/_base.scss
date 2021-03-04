@@ -34,12 +34,12 @@ h3,
 h4,
 h5,
 h6 {
-    @include sans-serif-font;
+    font-family: sans-serif !important;
 }
 
 p {
     font-family: sans-serif !important;
-    font-size: 18px !important;
+    font-size: 18px;
     line-height: 1.5;
     margin-bottom: 20px;
 }
@@ -76,8 +76,8 @@ aside {
 // Navigation
 
 .navbar-default {
-    background-color: white;
-    border-color: rgba($theme-dark, .5);
+    background-color: #e5eff8e6; //background-color: transparent;
+    border-color: #e5eff8e6;
     @include sans-serif-font;
     @include transition-all;
     .navbar-header .navbar-brand {
@@ -115,8 +115,6 @@ aside {
         }
     }
     @media (min-width: 768px) {
-        background-color: #e5eff8e6; //background-color: transparent;
-        border-color: rgba(white, .3);
         .navbar-header .navbar-brand {
             color: rgba(white, .7);
             &:hover,
@@ -155,12 +153,19 @@ aside {
 
 .navbar-brand {
     padding: 0 !important;
+    float: none ;
 }
 
 .nav-content {
-    padding-right: 70px !important;
-    padding-left: 70px !important;
-    padding-top: 30px !important;
+    padding-right: 10px ;
+    padding-left: 10px ;
+    padding-top: 0px ;
+
+    @media (min-width: 768px) {
+        padding-right: 70px !important;
+        padding-left: 70px !important;
+        padding-top: 30px !important;
+    }
 }
 
 // Homepage Header
@@ -168,10 +173,12 @@ aside {
 header {
     position: relative;
     width: 100%;
-    min-height: auto;
+    min-height: 85% !important;
     @include background-cover;
     background-position: center;
     background-image: url('../img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
     color: white;
     .header-content {
@@ -180,6 +187,9 @@ header {
         padding: 100px 15px 100px;
         width: 100%;
         .header-content-inner {
+            max-width: 80% !important;
+            text-align: left !important;
+            color: #2b3d4a !important;
             h1 {
                 font-weight: 700;
                 text-transform: uppercase;
@@ -191,9 +201,10 @@ header {
             }
             p {
                 font-weight: 300;
-                color: rgba(white, .7);
+                color: #2b3d4a;
                 font-size: 16px;
                 margin-bottom: 50px;
+                max-width: none !important;
             }
         }
     }
@@ -211,7 +222,7 @@ header {
                 margin-left: auto;
                 margin-right: auto;
                 p {
-                    font-size: 18px;
+                    font-size: 20px;
                     max-width: 80%;
                     margin-left: auto;
                     margin-right: auto;
@@ -225,7 +236,7 @@ header {
 
 .section-heading {
     margin-top: 0;
-    letter-spacing: -1px;
+    letter-spacing: 0px;
     font-weight: 500;
 }
 
