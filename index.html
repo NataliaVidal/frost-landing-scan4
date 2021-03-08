@@ -39,38 +39,40 @@
 
 <body id="page-top">
   <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
+    <div class="nav-content">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <button type="button" class="navbar-toggle collapsed" style="margin-top: 0;" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top"><img src="img/imagotipo-regular.png" width="40%"/></a>
+            <a class="navbar-brand page-scroll" href="#header">
+                <img src="img/imagotipo-regular.png" width="40%" style="padding-top: 0%;"/>
+            </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="page-scroll" href="#about">About</a>
+                    <a class="page-scroll" href="#what-for">What is it?</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#what-for">What Is It For?</a>
+                    <a class="page-scroll" href="#how-works">How does it work?</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#how-works">How Does It Works?</a>
+                    <a class="page-scroll" href="#partners">Partners</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#team">About Inria</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#news">News</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#team">Team</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#partners">Partners</a>
+                    <a class="page-scroll" href="#footer">Contact</a>
                 </li>
             </ul>
         </div>
@@ -79,18 +81,18 @@
     <!-- /.container-fluid -->
 </nav>
 
-  <header>
+  <header id="header">
     <div class="header-content">
         <div class="header-content-inner">
             <h1>Take Care Of the Crops</h1>
-            <hr>
-            <p>FrostForecast is a frost prediction system, thats allows to monitor the climate state of crops.</p>
-            <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+            <hr style="margin-left: 0;">
+            <p>With our <strong>frost prediction</strong> system you can be better prepared to keep your crops healthy.</p>
+
         </div>
     </div>
 </header>
 
-  <section class="bg-primary" id="about">
+  <!--<section class="bg-primary" id="about">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -102,15 +104,16 @@
         </div>
     </div>
 </section>
-
-  <section id="what-for">
+-->
+  <section class="bg-primary" id="what-for">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">What Is It For?</h2>
-                <hr class="primary">
+                <h2 class="section-heading">What Is <strong>Frost</strong>Forecast?</h2>
+                <hr class="light">
                 <p>
-                    Using multiple data sources as inputs to a machine learning engine, it will deliver early frost warnings so farmers can focus their control effort.
+                    <strong>Frost</strong>Forecast is a tool that provides frost prediction alerts for farmers and producers.
+                    Using multiple data sources as inputs to a frost prediction model, it will deliver early frost warnings so farmers can focus their control effort.
                 </p>
             </div>
         </div>
@@ -119,59 +122,165 @@
         <div class="row">
             <div class="col-lg-4 col-md-8 text-center">
                 <div class="service-box">
-                    <i class="fa fa-4x fa-seedling wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                    <!--"wow" class for animated icons (but it has a conflict with line 5 in _base.scss)--->
+                    <i class="far fa-4x fa-snowflake bounceIn text-primary" data-wow-delay=".1s"></i>
+                    <h3>Get early alerts on frosts events</h3>
+                    <p class="text-faded">A machine learning model uses data from different sources to predict frost events and generate early alerts.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-8 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-seedling bounceIn text-primary" data-wow-delay=".1s"></i>
                     <h3>Improve decision-making for frost prevention</h3>
-                    <p class="text-muted">It helps agricultural producers make informed decisions on active frost control.</p>
+                    <p class="text-faded">It helps agricultural producers make informed decisions on active frost control.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-8 text-center">
                 <div class="service-box">
-                    <i class="far fa-4x fa-snowflake wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                    <h3>Get early alerts on frosts</h3>
-                    <p class="text-muted">A predictive model uses data from different sources to generate early frost alerts.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-8 text-center">
-                <div class="service-box">
-                    <i class="fas fa-4x fa-temperature-low wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                    <i class="fas fa-4x fa-temperature-low bounceIn text-primary" data-wow-delay=".2s"></i>
                     <h3>Know what’s happening in the state</h3>
-                    <p class="text-muted">Sensors are installed in different sectors of the state, providing climatic information about each one of them.</p>
+                    <p class="text-faded">Sensors are installed in different sectors of the state, providing climatic information about each one of them.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-  <section id="how-works">
+  <section class="bg-light" id="how-works">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
+            <div class="col-lg-12 text-center">
                 <h2 class="section-heading">How Does It Work?</h2>
                 <hr class="primary">
-                <p>Using a network of sensors through a mesh topology, nodes are located at a certain distance in order to capture environmental variables, such as temperature and humidity. A gateway is configured to receive and handle the captured data. These are stored in a database and can be viewed through a dashboard.</p>
+                <p>
+                    <strong>Frost</strong>Forecast collects local and regional weather data.
+                    This data is received and handled through a gateway.
+                    Through this <strong>Frost</strong>Forecast's predictive model generates frost event alerts
+                    to allow producers focus their efforts for frosts active control in their crops.
+                </p>
             </div>
-        <!-- <div class="col-lg-2 col-lg-offset-2 text-center">
-            <a href="https://twitter.com/">
-                <i class="fa fa-twitter fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                <p></p>
-            </a>
         </div>
-        <div class="col-lg-2 col-lg-offset-1 text-center">
-            <a href="mailto:">
-            <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                <p></p>
-            </a>
-        </div>
-        <div class="col-lg-2 col-lg-offset-1 text-center">
-            <a href="https://github.com/">
-            <i class="fa fa-github fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                <p></p>
-            </a>
-        </div> -->
+    </div>
+    <img src="img/background-graph.png" class="how-to" alt/>
+</section>
 
+  <section id="partners" class="bg-secondary">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Partners</h2>
+                <hr class="primary">
+                <div class="col-lg-1 col-sm-1"></div>
+                <div class="col-lg-3 col-sm-3 col-sm-8" style="padding: 15px 15px 5px 5px;">
+                    <a href="https://inria.cl/en" class="portfolio-box">
+                        <img src="img/partners/logo-inria.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Inria Chile
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-1 col-sm-1"></div>
+                <div class="col-lg-2 col-sm-3 col-xs-8" style="padding: 5px 15px;">
+                    <a href="https://team.inria.fr/eva/" class="portfolio-box">
+                        <img src="img/partners/logo-eva.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    EVA (Inria)
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-1 col-sm-1"></div>
+                <div class="col-lg-3 col-sm-3 col-xs-8" style="padding: 20px 15px 5px 15px;">
+                    <a href="https://www.corfo.cl/sites/cpp/homecorfo" class="portfolio-box">
+                        <img src="img/partners/logo-corfo.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Corfo
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-12 text-left">
+                <div class="col-lg-3 col-sm-1"></div>
+                <div class="clo-lg-3 col-sm-3 col-xs-8" style="padding: 20px 15px 5px 15px;">
+                    <a href="https://www.cii.conchaytoro.com/home/" class="portfolio-box">
+                        <img src="img/partners/logo-cii.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Concha y Toro
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-1 col-sm-1"></div>
+                <div class="col-lg-3 col-sm-3 col-xs-8" style="padding: 40px 15px 5px 15px;">
+                    <a href="http://agroprime.com" class="portfolio-box">
+                        <img src="img/partners/logo-agroprime.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Agroprime
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
+  <section id="team">
+    <div class="col-lg-12 text-center">
+        <h2 class="section-heading">About Inria</h2>
+        <hr class="primary">
+    </div>
+    <div class="container text-center">
+        <p class="main">
+            <strong>Inria</strong>
+            is the French national research institute for digital science and technology.
+            As a technological institute, Inria supports the diversity of innovation pathways:
+            from open source software publishing to the creation of technological startups (Deeptech).
+        </p>
+        <p class="main">
+            <strong>Frost</strong>Forecast
+            is a collaboration between <strong>Inria Chile</strong>
+            and the <strong>Inria-Eva team</strong>.
+        </p>
+        <div class="col-lg-6 col-xs-12 text-center">
+            <h3>Inria Chile</h3>
+            <p>
+                Created in 2012, Inria Chile is the first Inria center outside France.
+                It is a driving force for technological innovation and knowledge transfer,
+                collaborating effectively with companies, universities, public institutions,
+                and startups to meet the challenges of the digital revolution.
+                It is also a means to promote the R&D activities of companies and startups
+                in Chile and Latin America.
+            </p>
+        </div>
+        <div class="col-lg-6 col-xs-12 text-center">
+            <h3>Eva</h3>
+            <p>
+                Inria-EVA is a leading research team in low-power wireless communications.
+                The team pushes the limits of low-power wireless mesh networking
+                by applying them to critical applications such as industrial control loops,
+                with harsh reliability, scalability, security and energy constraints.
+            </p>
+        </div>
+    </div>
+</section>
   <section id="news">
     <div class="container">
         <div class="row">
@@ -191,173 +300,26 @@
     </div>
 </section>
 
-  <!--<section id="team">
-    <div class="col-lg-12 text-center">
-        <h2 class="section-heading">Team</h2>
-        <hr class="primary">
-    </div>
+  <section id="footer" class="bg-primary">
     <div class="container">
-        <h3 style="text-align: center;">Scientific Comittee</h3>
-
-        <div style="display: flex;flex-wrap: wrap;justify-content: center;">
-        
-            
-            <div style="text-align: center;background-color: white;width: 40%; max-width: 320px; height: 60%; max-height: 430px; padding: 24px 8px;color:black;display: inline-block;
-            margin: 24px 16px;">
-                <img src="../img/teams/Nayat Sanchez-Pi.jpeg" style="border-radius: 50%;display: block; margin: 0 auto; width: 100%; max-width: 200px; height: 100%; max-height: 200px;" alt="">
-                <a href="https://inria.cl/en/nayat-sanchez-pi">
-                    Nayat Sánchez-Pi
-                </a>
-                <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">Lead</p>
-                <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">Inria Chile Research Center</p>
-                <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">Artificial Intelligence</p>
-                <div class="icons">
-                    <div class="icons">
-                        <a href="https://inria.cl/en/nayat-sanchez-pi" class="fa fa-globe" target="_blank"></a>
-                        <a href="https://twitter.com/nayatsanchezpi" class="fab fa-twitter" target="_blank"></a>
-                        <a href="https://www.linkedin.com/in/nayat-sanchez-pi-02812110/" class="fab fa-linkedin" target="_blank"></a>
-                    </div>
+        <!--<div class="no-gutter">-->
+            <div class="row">
+                <div class="col-lg-6 col-md-6 text-left">
+                    <h2 class="section-heading">Contact</h2>
+                    <hr style="margin-left: 0;" class="light">
+                    <p>info@inria.cl</p>
+                </div>
+                <div class="col-lg-3 col-md-3"></div>
+                <div class="col-lg-3 col-md-3">
+                    <br>
+                    <img src="img/imagotipo-regular-white.png" class="img-responsive" alt>
                 </div>
             </div>
-            
-        
-            
-            <div style="text-align: center;background-color: white;width: 40%; max-width: 320px; height: 60%; max-height: 430px; padding: 24px 8px;color:black;display: inline-block;
-            margin: 24px 16px;">
-                <img src="../img/teams/Luis Martí.jpeg" style="border-radius: 50%;display: block; margin: 0 auto; width: 100%; max-width: 200px; height: 100%; max-height: 200px;" alt="">
-                <a href="http://lmarti.com">
-                    Luis Martí
-                </a>
-                <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">Co-lead</p>
-                <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">Inria Chile Research Center</p>
-                <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">Machine learning & Evolutionary Computing</p>
-                <div class="icons">
-                    <div class="icons">
-                        <a href="http://lmarti.com" class="fa fa-globe" target="_blank"></a>
-                        <a href="https://twitter.com/iamluismarti" class="fab fa-twitter" target="_blank"></a>
-                        <a href="https://www.linkedin.com/in/luismarti/" class="fab fa-linkedin" target="_blank"></a>
-                    </div>
-                </div>
-            </div>
-            
-        
-        </div>
-
-        <div style="display: flex;flex-wrap: wrap;justify-content: center;">
-        
-            
-        
-            
-        
-        </div>
-
-
-        <div style="display: flex;flex-wrap: wrap;justify-content: center;">
-        
-            
-        
-            
-        
-        </div>
-        ​
-        <h3 style="text-align: center;">Researchers</h3>
-        <div style="display: flex;flex-wrap: wrap;justify-content: center;">
-        
-            
-        
-            
-        
-        </div>
-
-
-        <h3 style="text-align: center;">Engineering team</h3>
-        <div style="display: flex;flex-wrap: wrap;justify-content: center;">
-        
-            
-        
-            
-        
-        </div>
-    </div>
-</section>-->
-  <section class="no-padding" id="partners">
-    <div class="container-fluid">
-        <div class="no-gutter">
-            <div class="row text-center">
-                <h2 class="section-heading">Partners</h2>
-                <hr class="primary">
-            </div>
-            <div class="row bg-primary">
-                <div class="row">
-                    <div class="col-lg-2 col-sm-2"></div>
-                    <div class="col-lg-3 col-sm-3" style="padding: 50px;">
-                        <a href="https://inria.cl/es" class="portfolio-box">
-                            <img src="img/partners/logo-inria.png" class="img-responsive" alt="">
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    <div class="project-category text-faded">
-                                        Inria Chile
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-2 col-sm-2" style="padding: 50px;">
-                        <a href="https://team.inria.fr/eva/" class="portfolio-box">
-                            <img src="img/partners/logo-eva.png" class="img-responsive" alt="">
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    <div class="project-category text-faded">
-                                        EVA (Inria)
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-sm-3" style="padding: 50px;">
-                        <a href="https://www.corfo.cl/sites/cpp/homecorfo" class="portfolio-box">
-                            <img src="img/partners/logo-corfo.png" class="img-responsive" alt="">
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    <div class="project-category text-faded">
-                                        Corfo
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3 col-sm-3"></div>
-                    <div class="col-lg-3 col-sm-3" style="padding: 40px;">
-                        <a href="http://agroprime.com/en/" class="portfolio-box">
-                            <img src="img/partners/logo-agroprime.png" class="img-responsive" alt="">
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    <div class="project-category text-faded">
-                                        Agroprime
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-sm-3" style="padding: 40px;">
-                        <a href="https://www.cii.conchaytoro.com/home/" class="portfolio-box">
-                            <img src="img/partners/logo-cii.png" class="img-responsive" alt="">
-                            <div class="portfolio-box-caption">
-                                <div class="portfolio-box-caption-content">
-                                    <div class="project-category text-faded">
-                                        Concha y Toro
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!--</div>-->
     </div>
 </section>
+
+
 
   <!-- jQuery -->
 <script src="js/jquery.js"></script>
