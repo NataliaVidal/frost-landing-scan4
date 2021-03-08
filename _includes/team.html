@@ -1,138 +1,39 @@
 <section id="team">
     <div class="col-lg-12 text-center">
-        <h2 class="section-heading">Team</h2>
+        <h2 class="section-heading">About Inria</h2>
         <hr class="primary">
     </div>
-    <div class="container">
-        <h3 style="text-align: center;">Scientific Comittee</h3>
-
-        <div style="display: flex;flex-wrap: wrap;justify-content: center;">
-        {% for member in site.data.team %}
-            {% if member.location == 1 %}
-            <div style="text-align: center;background-color: white;width: 40%; max-width: 320px; height: 60%; max-height: 430px; padding: 24px 8px;color:black;display: inline-block;
-            margin: 24px 16px;">
-                <img src="{{ member.image }}" style="border-radius: 50%;display: block; margin: 0 auto; width: 100%; max-width: 200px; height: 100%; max-height: 200px;" alt="">
-                <a href="{{ member.link }}">
-                    {{ member.name }}
-                </a>
-                <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">{{ member.position }}</p>
-                <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">{{ member.organization }}</p>
-                <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">{{ member.expertise }}</p>
-                <div class="icons">
-                    <div class="icons">
-                        <a href="{{ member.link }}" class="fa fa-globe" target="_blank"></a>
-                        <a href="{{ member.twitter }}" class="fab fa-twitter" target="_blank"></a>
-                        <a href="{{ member.linkedin }}" class="fab fa-linkedin" target="_blank"></a>
-                    </div>
-                </div>
-            </div>
-            {% endif %}
-        {% endfor %}
+    <div class="container text-center">
+        <p class="main">
+            <strong>Inria</strong>
+            is the French national research institute for digital science and technology.
+            As a technological institute, Inria supports the diversity of innovation pathways:
+            from open source software publishing to the creation of technological startups (Deeptech).
+        </p>
+        <p class="main">
+            <strong>Frost</strong>Forecast
+            is a collaboration between <strong>Inria Chile</strong>
+            and the <strong>Inria-Eva team</strong>.
+        </p>
+        <div class="col-lg-6 col-xs-12 text-center">
+            <h3>Inria Chile</h3>
+            <p>
+                Created in 2012, Inria Chile is the first Inria center outside France.
+                It is a driving force for technological innovation and knowledge transfer,
+                collaborating effectively with companies, universities, public institutions,
+                and startups to meet the challenges of the digital revolution.
+                It is also a means to promote the R&D activities of companies and startups
+                in Chile and Latin America.
+            </p>
         </div>
-
-        <div style="display: flex;flex-wrap: wrap;justify-content: center;">
-        {% for member in site.data.team %}
-            {% if member.location == 2 %}
-            <div style="text-align: center;background-color: white; width: 40%; max-width: 320px; height: 60%; max-height: 430px; padding: 24px 8px;color:black;display: inline-block;
-            margin: 24px 16px;">
-                <img src="{{ member.image }}" style="border-radius: 50%;display: block; margin: 0 auto; width: 100%; max-width: 200px; height: 100%; max-height: 200px;" alt="">
-                <a href="{{ member.link }}">
-                    {{ member.name }}
-                </a>
-                <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">{{ member.position }}</p>
-                <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">{{ member.organization }}</p>
-                <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">{{ member.expertise }}</p>
-                <div class="icons">
-                    <div class="icons">
-                        <a href="{{ member.link }}" class="fa fa-globe" target="_blank"></a>
-                        {% if.member.twitter != # %}
-                            <a href="{{ member.twitter }}" class="fab fa-twitter" target="_blank"></a>
-                        {% endif %}
-                        {% if.member.linkedin != # %}
-                            <a href="{{ member.linkedin }}" class="fab fa-linkedin" target="_blank"></a>
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
-            {% endif %}
-        {% endfor %}
-        </div>
-
-
-        <div style="display: flex;flex-wrap: wrap;justify-content: center;">
-        {% for member in site.data.team %}
-            {% if member.location == 3 %}
-            <div style="text-align: center;background-color: white; width: 40%; max-width: 320px; height: 60%; max-height: 430px; padding: 24px 8px;color:black;display: inline-block;
-            margin: 24px 16px;">
-                <img src="{{ member.image }}" style="border-radius: 50%;display: block; margin: 0 auto; width: 100%; max-width: 200px; height: 100%; max-height: 200px;" alt="">
-                <a href="{{ member.link }}">
-                    {{ member.name }}
-                </a>
-                <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">{{ member.position }}</p>
-                <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">{{ member.organization }}</p>
-                <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">{{ member.expertise }}</p>
-                <div class="icons">
-                    <div class="icons">
-                        <a href="{{ member.link }}" class="fa fa-globe" target="_blank"></a>
-                        {% if.member.twitter != # %}
-                            <a href="{{ member.twitter }}" class="fab fa-twitter" target="_blank"></a>
-                        {% endif %}
-                        {% if.member.linkedin != # %}
-                            <a href="{{ member.linkedin }}" class="fab fa-linkedin" target="_blank"></a>
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
-            {% endif %}
-        {% endfor %}
-        </div>
-        ​
-        <h3 style="text-align: center;">Researchers</h3>
-        <div style="display: flex;flex-wrap: wrap;justify-content: center;">
-        {% for member in site.data.team %}
-            {% if member.location == 4 %}
-            <div style="text-align: center;background-color: white; width: 40%; max-width: 320px; height: 60%; max-height: 430px; padding: 24px 8px;color:black;display: inline-block;
-            margin: 24px 16px;">
-                <img src="{{ member.image }}" style="border-radius: 50%;display: block; margin: 0 auto; width: 100%; max-width: 200px; height: 100%; max-height: 200px;" alt="">
-                <a href="{{ member.link }}">
-                    {{ member.name }}
-                </a>
-                <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">{{ member.position }}</p>
-                <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">{{ member.organization }}</p>
-                <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">{{ member.expertise }}</p>
-                <div class="icons">
-                    {% if.member.link != # %}
-                        <a href="{{ member.link }}" class="fa fa-globe" target="_blank"></a>
-                    {% endif %}
-                    {% if.member.twitter != # %}
-                            <a href="{{ member.twitter }}" class="fab fa-twitter" target="_blank"></a>
-                    {% endif %}
-                    {% if.member.linkedin != # %}
-                        <a href="{{ member.linkedin }}" class="fab fa-linkedin" target="_blank"></a>
-                    {% endif %}
-                </div>
-            </div>
-            {% endif %}
-        {% endfor %}
-        </div>
-
-
-        <h3 style="text-align: center;">Engineering team</h3>
-        <div style="display: flex;flex-wrap: wrap;justify-content: center;">
-        {% for member in site.data.team %}
-            {% if member.location == 5 %}
-            <div style="text-align: center;background-color: white; width: 40%; max-width: 320px; height: 60%; max-height: 430px; padding: 24px 8px;color:black;display: inline-block;
-            margin: 24px 16px;">
-                <img src="{{ member.image }}" style="border-radius: 50%;display: block; margin: 0 auto; width: 100%; max-width: 200px; height: 100%; max-height: 200px;" alt="">
-                <a href="{{ member.link }}">
-                    {{ member.name }}
-                </a>
-                <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">{{ member.position }}</p>
-                <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">{{ member.organization }}</p>
-                <p style="color:#888888;font-size: 0.8em;margin-bottom: 10px;">{{ member.expertise }}</p>
-            </div>
-            {% endif %}
-        {% endfor %}
+        <div class="col-lg-6 col-xs-12 text-center">
+            <h3>Eva</h3>
+            <p>
+                Inria-EVA is a leading research team in low-power wireless communications.
+                The team pushes the limits of low-power wireless mesh networking
+                by applying them to critical applications such as industrial control loops,
+                with harsh reliability, scalability, security and energy constraints.
+            </p>
         </div>
     </div>
 </section>
