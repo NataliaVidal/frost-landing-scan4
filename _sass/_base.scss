@@ -55,6 +55,7 @@ p {
 
 .bg-light {
     background-color: #deeaf8;
+    padding-bottom: 0;
 }
 
 .text-faded {
@@ -187,7 +188,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     @media (max-width: 768px) {
-        background-position: 80%;
+        background-position: 90%;
     }
     text-align: center;
     color: white;
@@ -197,8 +198,8 @@ header {
         padding: 100px 15px 100px;
         width: 100%;
         .header-content-inner {
-            max-width: 80% !important;
-            text-align: left !important;
+            max-width: 70% ;
+            text-align: left;
             color: #2b3d4a !important;
             h1 {
                 font-weight: 700;
@@ -214,7 +215,8 @@ header {
                 color: #2b3d4a;
                 font-size: 16px;
                 margin-bottom: 50px;
-                max-width: none !important;
+                margin-left: 0;
+                //max-width: none !important;
             }
         }
     }
@@ -231,10 +233,13 @@ header {
                 max-width: 1000px;
                 margin-left: auto;
                 margin-right: auto;
+                h1 {
+                    max-width: 70%;
+                }
                 p {
                     font-size: 20px;
-                    max-width: 80%;
-                    margin-left: auto;
+                    max-width: 60%;
+                    margin-left: 0;
                     margin-right: auto;
                 }
             }
