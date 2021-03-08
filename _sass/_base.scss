@@ -392,6 +392,14 @@ img::selection {
     background: transparent;
 }
 
+img.how-to {
+    width: 100%;
+    @media (max-width: 450px) {
+        width: 120%;
+        object-position: -50px;
+    }
+}
+
 img::-moz-selection {
     color: white;
     background: transparent;
