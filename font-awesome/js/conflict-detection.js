@@ -79,7 +79,7 @@
   var listener = function listener() {
     DOCUMENT.removeEventListener('DOMContentLoaded', listener);
     loaded = 1;
-    functions.map(function (fn) {
+    functions.forEach(function (fn) {
       return fn();
     });
   };
