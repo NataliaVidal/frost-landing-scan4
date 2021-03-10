@@ -291,7 +291,7 @@
   var listener = function listener() {
     DOCUMENT.removeEventListener('DOMContentLoaded', listener);
     loaded = 1;
-    functions.map(function (fn) {
+    functions.forEach(function (fn) {
       return fn();
     });
   };
@@ -2149,7 +2149,7 @@
         var normalized = definition.prefix && definition.iconName && definition.icon ? {
           0: definition
         } : definition;
-        Object.keys(normalized).map(function (key) {
+        Object.keys(normalized).forEach(function (key) {
           var _normalized$key = normalized[key],
               prefix = _normalized$key.prefix,
               iconName = _normalized$key.iconName,
@@ -2409,7 +2409,7 @@
       ensureCss();
       var children = [];
       assembler(function (args) {
-        Array.isArray(args) ? args.map(function (a) {
+        Array.isArray(args) ? args.forEach(function (a) {
           children = children.concat(a.abstract);
         }) : children = children.concat(args.abstract);
       });
