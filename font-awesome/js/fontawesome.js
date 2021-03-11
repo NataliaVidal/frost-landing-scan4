@@ -115,11 +115,11 @@
       _d = true;
       _e = err;
     } finally {
-      try {
+      //try {
         if (!_n && _i["return"] != null) _i["return"]();
-      } finally {
+      //} finally {
         if (_d) throw _e;
-      }
+      //}
     }
 
     return _arr;
@@ -175,11 +175,11 @@
   var MUTATION_APPROACH_ASYNC = 'async';
   var TAGNAMES_TO_SKIP_FOR_PSEUDOELEMENTS = ['HTML', 'HEAD', 'STYLE', 'SCRIPT'];
   var PRODUCTION = function () {
-    try {
+    //try {
       return "production" === 'production';
-    } catch (e) {
-      return false;
-    }
+    //} catch (e) {
+    //  return false;
+    //}
   }();
   var PREFIX_TO_STYLE = {
     'fas': 'solid',
